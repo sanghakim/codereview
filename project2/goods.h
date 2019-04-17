@@ -8,15 +8,17 @@
 //    std::cout << test.GetIndex() << " - " << test.GetPrice << endl;
 class Goods{
  public:
-  Goods::Goods(): goods_index_(0), goods_price_(0) {} 
-  Goods::Goods(int index, int price) : goods_index_(index), goods_price_(price) {}
+  Goods::Goods()
+   : index_(0), price_(0) {} 
+  Goods::Goods(int index, int price) 
+   : index_(index), price_(price) {}
   void SetGoodsInfo(const int index, const int price);
   int GetIndex();
   int GetPrice();
 
  private:
-  int goods_index_ = 0;
-  int goods_price_ = 0;
+  int index_ = 0;
+  int price_ = 0;
 };
 
 
