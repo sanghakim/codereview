@@ -15,7 +15,7 @@
 //     tobuylist.PrintList();
 class Shopping{
  public:
-  void PushList(Goods object);
+  void PushList(const Goods object);
   Goods GetLastElement();
   void PrintList();
   void SortByPrice();
