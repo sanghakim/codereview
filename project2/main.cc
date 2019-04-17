@@ -2,18 +2,11 @@
 #include "./shopping.h"
 
 int main(int argc, char* argv[]) {
-  Goods goods1;
-  Goods goods2;
-  Goods goods3;
   Shopping shoppingList;
-
-  goods1.SetGoodsInfo(2, 3000);
-  goods2.SetGoodsInfo(1, 5000);
-  goods3.SetGoodsInfo(3, 1000);
-
-  shoppingList.PushList(goods1);
-  shoppingList.PushList(goods2);
-  shoppingList.PushList(goods3);
+  
+  shoppingList.PushList(new Goods(2, 3000));
+  shoppingList.PushList(new Goods(1, 5000));
+  shoppingList.PushList(new Goods(3, 1000));
 
   shoppingList.PrintList();
 
